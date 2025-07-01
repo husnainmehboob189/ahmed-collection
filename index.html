@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karl Fashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row h-100 align-items-center justify-content-end">
+            <div class="col-lg-9 col-12">
+                <div class="text-center main-logo mx-auto">
+                    <img src="img/logo.png.webp">
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 text-center text-lg-end mt-3 mt-lg-0">
+                <!-- Right: Cart + Toggle -->
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-bag fs-5"></i>
+                        <span class="small text-center">Your Bag $20</span>
+                        <button class="btn btn-dark rounded-circle fs-5" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasMenu">
+                            <i class="bi bi-list text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container d-flex justify-content-between align-items-center py-3 py-lg-2">
+        <!-- Share Icons (Visible on all screens) -->
+        <div class="share-container d-none d-lg-block">
+            <span class="share-tag col-lg-block ">SHARE</span>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-twitter text-dark fs5"></i></a>
+                <a href="#"><i class="bi bi-pinterest text-dark fs-5"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark fs-5"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark fs-5"></i></a>
+            </div>
+        </div>
+
+        <!-- Desktop Navigation (Hidden on mobile) -->
+        <nav class="desktop-nav d-none">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">HOME</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bold text-dark" href="#" data-bs-toggle="dropdown">PAGES</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item position-relative">
+                    <a class="nav-link fw-bold text-dark" href="#">DRESSES</a>
+                    <span class="hot-tag">HOT</span>
+                </li>
+                <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">SHOES</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contact Box (Hidden on mobile) -->
+        <div class="nav-contact-box d-none d-lg-flex align-items-center ms-3">
+            <i class="bi bi-telephone"></i> +34 657 3556 778
+        </div>
+
+        <!-- Mobile Menu Button (Hidden on desktop) -->
+        <button class="mobile-menu-btn " data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+            <i class="bi bi-list fs-3"></i>
+        </button>
+    </div>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link fw-bold py-2" href="#">HOME</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link fw-bold py-2 dropdown-toggle" href="#" data-bs-toggle="dropdown">PAGES</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item position-relative">
+                    <a class="nav-link fw-bold py-2" href="#">DRESSES</a>
+                    <span class="hot-tag">HOT</span>
+                </li>
+                <li class="nav-item"><a class="nav-link fw-bold py-2" href="#">SHOES</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold py-2" href="#">CONTACT</a></li>
+                <li class="nav-item mt-4">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-telephone me-2"></i> +34 657 3556 778
+                    </div>
+                </li>
+                <li class="nav-item mt-4">
+                    <div class="d-flex align-items-center">
+                        <span class="me-3 fw-bold">SHARE</span>
+                        <div class="d-flex gap-3">
+                            <a href="#"><i class="bi bi-twitter text-dark"></i></a>
+                            <a href="#"><i class="bi bi-pinterest text-dark"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark"></i></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 📢 Promo Banner -->
+    <div class="d-flex flex-column flex-lg-row text-white text-center mt-3">
+        <div class="col-lg-4 promo-banner promo-light">
+            <strong>Free Shipping & Returns</strong>
+            <div><small>BUY NOW</small></div>
+        </div>
+        <div class="col-lg-4 promo-banner promo-pink">
+            <strong>20% Discount for all dresses</strong>
+            <div><small>USE CODE: Colorlib</small></div>
+        </div>
+        <div class="col-lg-4 promo-banner promo-dark">
+            <strong>20% Discount for students</strong>
+            <div><small>USE CODE: Colorlib</small></div>
+        </div>
+    </div>
+
+    <!-- new section -->
+
+    <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+        <!-- Carousel -->
+        <div id="fashionCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <!-- This would be your background image -->
+                    <div class="d-block w-100 h-100"
+                        style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1603252109303-2751441dd157') center/cover;width:500px;">
+                    </div>
+                    <div class="carousel-content">
+                        <h6 class="fs-5">* Only today we offer free shipping</h6>
+                        <h2 class="carousel-title">NEW COLLECTION</h2>
+                        <a href="#" class="btn btn-shop-now">SHOP NOW</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 (optional additional slide) -->
+                <div class="carousel-item">
+                    <div class="d-block w-100 h-100"
+                        style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1503342217505-b0a15ec3261c') center/cover;">
+                    </div>
+                    <div class="carousel-content">
+                        <h6 class="fs-5">* Only today we offer free shipping</h6>
+                        <h2 class="carousel-title">NEW COLLECTION</h2>
+                        <a href="#" class="btn btn-shop-now">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+
+        </div>
+    </div>
+
+    <!--  -->
+
+    <section class="sale-banner">
+        <div class="banner-image-left"></div>
+        <div class="banner-image-right"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Content Column -->
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="banner-content">
+                        <div class="title-line-1">ON ACCESSORIES</div>
+                        <div class="sale-badge">SALE</div>
+                        <div class="percentage">30%</div>
+                        <div>
+                            <a href="#" class="btn btn-shop">SHOP NOW</a>
+                            <a href="#" class="btn btn-shop">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="banner-content1">
+                        <div class="title-line-1">ON ACCESSORIES</div>
+                        <div class="sale-badge">SALE</div>
+                        <div class="percentage">30%</div>
+                        <div>
+                            <a href="#" class="btn btn-shop">SHOP NOW</a>
+                            <a href="#" class="btn btn-shop">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- tabs-->
+    <section>
+        <div class="container mt-5">
+            <h2 class="mb-4" style="text-align: center;">NEW ARRIVALS</h2>
+
+            <!-- Working Tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
+                        type="button" role="tab">ALL</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="woman-tab" data-bs-toggle="tab" data-bs-target="#woman" type="button"
+                        role="tab">WOMAN</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="man-tab" data-bs-toggle="tab" data-bs-target="#man" type="button"
+                        role="tab">MAN</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="accessories-tab" data-bs-toggle="tab" data-bs-target="#accessories"
+                        type="button" role="tab">ACCESSORIES</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="shoes-tab" data-bs-toggle="tab" data-bs-target="#shoes" type="button"
+                        role="tab">SHOES</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="kids-tab" data-bs-toggle="tab" data-bs-target="#kids" type="button"
+                        role="tab">KIDS</button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="myTabContent">
+                <!-- ALL Tab -->
+                <div class="tab-pane fade show active" id="all" role="tabpanel">
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <div class="card product-card">
+                                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                                    class="card-img-top product-img" alt="Jeans dress">
+                                <div class="card-body">
+                                    <h5 class="card-title">$39.90</h5>
+                                    <p class="card-text">Jeans midi cocktail dress</p>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card product-card">
+                                <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                                    class="card-img-top product-img" alt="Men's shirt">
+                                <div class="card-body">
+                                    <h5 class="card-title">$29.90</h5>
+                                    <p class="card-text">Men's casual shirt</p>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card product-card">
+                                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                                    class="card-img-top product-img" alt="Sneakers">
+                                <div class="card-body">
+                                    <h5 class="card-title">$49.90</h5>
+                                    <p class="card-text">Unisex sneakers</p>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WOMAN Tab -->
+                <div class="tab-pane fade" id="woman" role="tabpanel">
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <div class="card product-card">
+                                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                                    class="card-img-top product-img" alt="Jeans dress">
+                                <div class="card-body">
+                                    <h5 class="card-title">$39.90</h5>
+                                    <p class="card-text">Jeans midi cocktail dress</p>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card product-card">
+                                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                                    class="card-img-top product-img" alt="Women's blouse">
+                                <div class="card-body">
+                                    <h5 class="card-title">$34.90</h5>
+                                    <p class="card-text">Women's summer blouse</p>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAN Tab -->
+                <div class="tab-pane fade" id="man" role="tabpanel">
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <div class="card product-card">
+                                <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                                    class="card-img-top product-img" alt="Men's shirt">
+                                <div class="card-body">
+                                    <h5 class="card-title">$29.90</h5>
+                                    <p class="card-text">Men's casual shirt</p>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACCESSORIES Tab -->
+                <div class="tab-pane fade" id="accessories" role="tabpanel">
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <div class="card product-card">
+                                <img src="https://images.unsplash.com/photo-1591348278863-a8fb3887e2aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                                    class="card-img-top product-img" alt="Watch">
+                                <div class="card-body">
+                                    <h5 class="card-title">$59.90</h5>
+                                    <p class="card-text">Leather strap watch</p>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SHOES Tab -->
+                <div class="tab-pane fade" id="shoes" role="tabpanel">
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <div class="card product-card">
+                                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                                    class="card-img-top product-img" alt="Sneakers">
+                                <div class="card-body">
+                                    <h5 class="card-title">$49.90</h5>
+                                    <p class="card-text">Unisex sneakers</p>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KIDS Tab -->
+                <div class="tab-pane fade" id="kids" role="tabpanel">
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <div class="card product-card">
+                                <img src="https://images.unsplash.com/photo-1590071089561-2085c1ddf868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                                    class="card-img-top product-img" alt="Kids shoes">
+                                <div class="card-body">
+                                    <h5 class="card-title">$24.90</h5>
+                                    <p class="card-text">Kids sandals</p>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offer_area section_padding_100 bg-img"
+        style="background-image: url(img/bg-5.jpg.webp);height: 700px;">
+        <div class="container h-100">
+            <div class="row align-items-end justify-content-end">
+                <div class="col-12 col-md-8 col-lg-6" style="margin-top: 180px;">
+                    <div class="offer-content-area wow fadeInUp" data-wow-delay="1s"
+                        style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
+                        <h2>White t-shirt <span class="karl-level">Hot</span></h2>
+                        <p>* Free shipping until 25 Dec 2017</p>
+                        <div class="offer-product-price">
+                            <h3><span class="regular-price">$25.90</span> $15.90</h3>
+                        </div>
+                        <a href="#" class="btn karl-btn mt-30">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+   <section class="karl-testimonials-area section_padding_100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section_heading text-center mb-5">
+                    <h2>Testimonials</h2>
+                    <hr class="heading-hr">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="karl-testimonials-slides owl-carousel owl-theme">
+                    <!-- Testimonial 1 -->
+                    <div class="single-testimonial-area text-center p-4 shadow rounded bg-white">
+                        <span class="quote">“</span>
+                        <h6 class="testimonial-text">Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. </h6>
+                        <div class="testimonial-info d-flex align-items-center justify-content-center mt-4">
+                            <div class="tes-thumbnail me-3">
+                                <img src="img/tes-1.jpg.webp" class="rounded-circle" alt="" width="60" height="60">
+                            </div>
+                            <div class="testi-data text-start">
+                                <p class="mb-0 fw-bold">Michelle Williams</p>
+                                <span class="text-muted">Client, Los Angeles</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="single-testimonial-area text-center p-4 shadow rounded bg-white">
+                        <span class="quote">“</span>
+                        <h6 class="testimonial-text">Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. </h6>
+                        <div class="testimonial-info d-flex align-items-center justify-content-center mt-4">
+                            <div class="tes-thumbnail me-3">
+                                <img src="img/tes-1.jpg.webp" class="rounded-circle" alt="" width="60" height="60">
+                            </div>
+                            <div class="testi-data text-start">
+                                <p class="mb-0 fw-bold">John Smith</p>
+                                <span class="text-muted">Client, New York</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="single-testimonial-area text-center p-4 shadow rounded bg-white">
+                        <span class="quote">“</span>
+                        <h6 class="testimonial-text">Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. </h6>
+                        <div class="testimonial-info d-flex align-items-center justify-content-center mt-4">
+                            <div class="tes-thumbnail me-3">
+                                <img src="img/tes-1.jpg.webp" class="rounded-circle" alt="" width="60" height="60">
+                            </div>
+                            <div class="testi-data text-start">
+                                <p class="mb-0 fw-bold">Emily Brown</p>
+                                <span class="text-muted">Client, London</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <hr>
+    <!-- footer -->
+     <footer class="footer_area" style="margin-top: 60px;">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Footer Area Start -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="single_footer_area">
+                            <div class="footer-logo">
+                                <img src="img/logo.png.webp" alt="">
+                            </div>
+                            <div class="copywrite_text d-flex align-items-center">
+                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright © 2025 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Footer Area Start -->
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <div class="single_footer_area">
+                            <ul class="footer_widget_menu">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Faq</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Single Footer Area Start -->
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <div class="single_footer_area">
+                            <ul class="footer_widget_menu">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Our Policies</a></li>
+                                <li><a href="#">Afiliates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Single Footer Area Start -->
+                    <div class="col-12 col-lg-5">
+                        <div class="single_footer_area">
+                            <div class="footer_heading mb-30">
+                                <h6>Subscribe to our newsletter</h6>
+                            </div>
+                            <div class="subscribtion_form">
+                                <form action="#" method="post">
+                                    <input type="email" name="mail" class="mail" placeholder="Your email here">
+                                    <button type="submit" class="submit">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <hr>
+
+                <!-- Footer Bottom Area Start -->
+                <div class="footer_bottom_area" style="margin-top: 20px;margin-bottom: 20px;">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer_social_area text-center">
+                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Your Initialization Script -->
+   <!-- testimonial links -->
+    <script>
+    $(document).ready(function(){
+        $(".karl-testimonials-slides").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            smartSpeed: 800,
+            dots: true,
+            nav: false
+        });
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Bootstrap 5 JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
