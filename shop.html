@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row h-100 align-items-center justify-content-end">
+            <div class="col-lg-9 col-12">
+                <div class="text-center main-logo mx-auto">
+                    <!-- <img src="img/logo.png.webp"> -->
+                      <h2 style=" font-family: 'Times New Roman', serif;font-style: italic;">Ahmed Collecton</h2>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 text-center text-lg-end mt-3 mt-lg-0">
+                <!-- Right: Cart + Toggle -->
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-bag fs-5"></i>
+                        <span class="small text-center">Your Bag $20</span>
+                        <button class="btn btn-dark rounded-circle fs-5" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasMenu">
+                            <i class="bi bi-list text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container d-flex justify-content-between align-items-center py-3 py-lg-2">
+        <!-- Share Icons (Visible on all screens) -->
+        <div class="share-container">
+            <span class="share-tag d-none d-lg-block">SHARE</span>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-twitter text-dark fs-5"></i></a>
+                <a href="#"><i class="bi bi-pinterest text-dark fs-5"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark fs-5"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark fs-5"></i></a>
+            </div>
+        </div>
+
+        <!-- Desktop Navigation (Hidden on mobile) -->
+        <nav class="desktop-nav d-none">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link fw-bold text-dark" href="index.html">HOME</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bold text-dark" href="#" data-bs-toggle="dropdown">PAGES</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html">Home</a></li>
+                        <li><a class="dropdown-item" href="shop.html">shop</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item position-relative">
+                    <a class="nav-link fw-bold text-dark" href="#">DRESSES</a>
+                    <span class="hot-tag">HOT</span>
+                </li>
+                <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">SHOES</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contact Box (Hidden on mobile) -->
+        <div class="nav-contact-box d-none d-lg-flex align-items-center ms-3">
+            <i class="bi bi-telephone"></i> +34 657 3556 778
+        </div>
+
+        <!-- Mobile Menu Button (Hidden on desktop) -->
+        <button class="mobile-menu-btn " data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+            <i class="bi bi-list fs-3"></i>
+        </button>
+    </div>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link fw-bold py-2" href="#">HOME</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link fw-bold py-2 dropdown-toggle" href="#" data-bs-toggle="dropdown">PAGES</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item position-relative">
+                    <a class="nav-link fw-bold py-2" href="#">DRESSES</a>
+                    <span class="hot-tag">HOT</span>
+                </li>
+                <li class="nav-item"><a class="nav-link fw-bold py-2" href="#">SHOES</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold py-2" href="#">CONTACT</a></li>
+                <li class="nav-item mt-4">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-telephone me-2"></i> +34 657 3556 778
+                    </div>
+                </li>
+                <li class="nav-item mt-4">
+                    <div class="d-flex align-items-center">
+                        <span class="me-3 fw-bold">SHARE</span>
+                        <div class="d-flex gap-3">
+                            <a href="#"><i class="bi bi-twitter text-dark"></i></a>
+                            <a href="#"><i class="bi bi-pinterest text-dark"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark"></i></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 📢 Promo Banner -->
+    <div class="d-flex flex-column flex-lg-row text-white text-center mt-3">
+        <div class="col-lg-4 promo-banner promo-light">
+            <strong>Free Shipping & Returns</strong>
+            <div><small>BUY NOW</small></div>
+        </div>
+        <div class="col-lg-4 promo-banner promo-pink">
+            <strong>20% Discount for all dresses</strong>
+            <div><small>USE CODE: Colorlib</small></div>
+        </div>
+        <div class="col-lg-4 promo-banner promo-dark">
+            <strong>20% Discount for students</strong>
+            <div><small>USE CODE: Colorlib</small></div>
+        </div>
+    </div>
+    <!-- new section -->
+
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-3">
+                    <!-- Categories -->
+                    <h6 class="fw-bold mb-3">Categories</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cat1">
+                        <label class="form-check-label" for="cat1">Woman wear</label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cat2">
+                        <label class="form-check-label" for="cat2">Man Wear</label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cat3">
+                        <label class="form-check-label" for="cat3">Children</label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cat4">
+                        <label class="form-check-label" for="cat4">Bags & Purses</label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cat5">
+                        <label class="form-check-label" for="cat5">Eyewear</label>
+                    </div>
+                    <hr>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="cat6">
+                        <label class="form-check-label" for="cat6">Footwear</label>
+                    </div>
+
+                    <!-- Filter by Price -->
+                    <h6 class="fw-bold mt-4">FILTER BY PRICE</h6>
+                    <input type="range" class="form-range" min="0" max="1350" id="priceRange">
+                    <p class="mb-4">PRICE: <span id="priceOutput">0 - 1350</span></p>
+
+                    <hr>
+
+                    <!-- Filter by Color -->
+                    <h6 class="fw-bold" style="margin-top: 30px; margin-bottom: 20px;">FILTER BY COLOR</h6>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <div class="text-center">
+                            <div style="width: 30px; height: 30px; background: #ccc;"></div>
+                            <small>(3)</small>
+                        </div>
+                        <div class="text-center">
+                            <div style="width: 30px; height: 30px; background: #f44336;"></div>
+                            <small>(25)</small>
+                        </div>
+                        <div class="text-center">
+                            <div style="width: 30px; height: 30px; background: #fff176;"></div>
+                            <small>(112)</small>
+                        </div>
+                        <div class="text-center">
+                            <div style="width: 30px; height: 30px; background: #81c784;"></div>
+                            <small>(72)</small>
+                        </div>
+                        <div class="text-center">
+                            <div style="width: 30px; height: 30px; background: #ba68c8;"></div>
+                            <small>(9)</small>
+                        </div>
+                        <div class="text-center">
+                            <div style="width: 30px; height: 30px; background: #4dd0e1;"></div>
+                            <small>(29)</small>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Filter by Size -->
+                    <h6 class="fw-bold mt-4 mb-2">FILTER BY SIZE</h6>
+                    <div class="d-flex flex-wrap gap-3 mt-4 mb-4">
+                        <span>XS</span>
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                        <span>XXL</span>
+                    </div>
+                    <hr>
+                    <h5 class="mb-4 mt-3">Recommended</h5>
+                    <div class="d-flex gap-4">
+                        <img src="img/product-10.jpg.webp" alt="" class="img-fluid" style=" width: 80px;height: auto;">
+                        <div>
+                            <h6 class="product-name">Women's T-shirt</h6>
+                            <p>$ 39 .99</p>
+                        </div>
+
+                    </div>
+
+                    <div class=" d-flex  gap-4 mt-4">
+                        <img src="img/product-10.jpg.webp" alt="" class="img-fluid" style=" width: 80px;height: auto;">
+                        <div>
+                            <h6 class="product-name">Women's T-shirt</h6>
+                            <p>$ 39 .99</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Product Grid -->
+                <div class="col-md-9">
+                    <div class="row g-4">
+                        <!-- Product 1 -->
+                        <div class="col-md-4 col-mt-5">
+                            <div class="product-card">
+                                <img src="img/product-4.jpg.webp" alt="Jeans midi cocktail dress" class="img-fluid">
+                                <div class="product-price">$39.90</div>
+                                <div class="product-name">Jeans midi cocktail dress</div>
+                                <button class="add-to-cart-btn">ADD TO CART</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="col-md-4">
+                            <div class="product-card">
+                                <img src="img/product-5.jpg.webp" alt="Jeans midi cocktail dress" class="img-fluid">
+                                <div class="product-price">$39.90</div>
+                                <div class="product-name">Jeans midi cocktail dress</div>
+                                <button class="add-to-cart-btn">ADD TO CART</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="col-md-4">
+                            <div class="product-card">
+                                <img src="img/product-6.jpg.webp" alt="Jeans midi cocktail dress" class="img-fluid">
+                                <div class="product-price">$39.90</div>
+                                <div class="product-name">Jeans midi cocktail dress</div>
+                                <button class="add-to-cart-btn">ADD TO CART</button>
+                            </div>
+                        </div>
+
+
+                        <!-- Product 1 -->
+                        <div class="col-md-4">
+                            <div class="product-card">
+                                <img src="img/product-4.jpg.webp" alt="Jeans midi cocktail dress" class="img-fluid">
+                                <div class="product-price">$39.90</div>
+                                <div class="product-name">Jeans midi cocktail dress</div>
+                                <button class="add-to-cart-btn">ADD TO CART</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="col-md-4">
+                            <div class="product-card">
+                                <img src="img/product-5.jpg.webp" alt="Jeans midi cocktail dress" class="img-fluid">
+                                <div class="product-price">$39.90</div>
+                                <div class="product-name">Jeans midi cocktail dress</div>
+                                <button class="add-to-cart-btn">ADD TO CART</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="col-md-4">
+                            <div class="product-card">
+                                <img src="img/product-6.jpg.webp" alt="Jeans midi cocktail dress" class="img-fluid">
+                                <div class="product-price">$39.90</div>
+                                <div class="product-name">Jeans midi cocktail dress</div>
+                                <button class="add-to-cart-btn">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="mb-3">
+                            <button class="py-1 px-3">01</button>
+                            <button class="py-1 px-3">02</button>
+                            <button class="py-1 px-3">03</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--  -->
+        <div class="container">
+            <footer class="footer_area" style="margin-top: 60px;">
+                <div class="container">
+                    <div class="row">
+                        <!-- Single Footer Area Start -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="single_footer_area">
+                                <div class="footer-logo">
+                                    <!-- <img src="img/logo.png.webp" alt=""> -->
+                                      <h2 style=" font-family: 'Times New Roman', serif;font-style: italic;">Ahmed Collecton</h2>
+                                </div>
+                                <div class="copywrite_text d-flex align-items-center">
+                                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        Copyright © 2025 All rights reserved | This template is made with <i
+                                            class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#"
+                                            target="_blank">Colorlib</a>
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Footer Area Start -->
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                            <div class="single_footer_area">
+                                <ul class="footer_widget_menu">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Faq</a></li>
+                                    <li><a href="#">Returns</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Footer Area Start -->
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                            <div class="single_footer_area">
+                                <ul class="footer_widget_menu">
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Shipping</a></li>
+                                    <li><a href="#">Our Policies</a></li>
+                                    <li><a href="#">Afiliates</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Footer Area Start -->
+                        <div class="col-12 col-lg-5">
+                            <div class="single_footer_area">
+                                <div class="footer_heading mb-30">
+                                    <h6>Subscribe to our newsletter</h6>
+                                </div>
+                                <div class="subscribtion_form">
+                                    <form action="#" method="post">
+                                        <input type="email" name="mail" class="mail" placeholder="Your email here">
+                                        <button type="submit" class="submit">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Footer Bottom Area Start -->
+                    <div class="footer_bottom_area" style="margin-top: 20px;margin-bottom: 20px;">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footer_social_area text-center" >
+                                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

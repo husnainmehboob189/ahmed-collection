@@ -1,5 +1,5 @@
 .hot-tag {
-    background-color: #f50057;
+    background-color: black;
     color: #fff;
     font-size: 12px;
     padding: 2px 6px;
@@ -9,16 +9,29 @@
     right: -48px;
 }
 
+
 .share-tag {
-    background-color: #f50057;
+    background-color:black;
     color: #fff;
     font-size: 12px;
     padding: 2px 6px;
     border-radius: 3px;
+    width: 50px;
 }
+/* .share-tag:after{
+    position: absolute;
+    z-index: 2;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 9px 9px 9px;
+    border-color: transparent transparent #ff084e transparent;
+    right: 20px;
+} */
 
 .promo-banner {
-    padding: 30px 15px;
+    padding: 40px 15px;
     text-align: center;
     color: #fff;
 }
@@ -47,10 +60,10 @@
 }
 
 .nav-contact-box {
-    background-color: #f50057;
+    background-color:black;
     color: #fff;
     padding: 8px 16px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     font-size: 14px;
 }
 
@@ -194,7 +207,7 @@
             position: relative;
             z-index:1;
             height: 100%;
-            right: 22px;
+             padding: 40px;
         }
          .banner-content1 {
             position: relative;
@@ -299,7 +312,7 @@
         }
         .nav-tabs .nav-link.active {
             color: #fff;
-            background-color: #0d6efd;
+            background-color:black;
             font-weight: bold;
         }
         .tab-pane {
@@ -480,7 +493,7 @@ a {
     font-size: 14px;
     height: 50px;
     position: absolute;
-    right: 10px;
+    right: 2%;
     text-transform: uppercase;
    
     -webkit-transition-duration: 500ms;
@@ -491,8 +504,52 @@ a {
 .footer_social_area > a {
     display: inline-block;
     font-size: 26px;
-    padding: 0 30px;
+    padding: 0 21px;
 }
+
+
+/* shop css */
+   .product-title {
+      font-size: 14px;
+      color: #555;
+    }
+    .product-price {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .category-box {
+      border-bottom: 1px solid #eee;
+      padding: 5px 0;
+    }
+
+  /*  */
+    .product-card {
+            border: none;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .product-price {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .product-name {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .add-to-cart-btn {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            font-size: 14px;
+            width: 100%;
+            max-width: 200px;
+        }
+        .add-to-cart-btn:hover {
+            background-color: #333;
+        }
+    /*  */
 @media (max-width: 991.98px) {
 
     .desktop-nav,
