@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>Ready Bootstrap Dashboard</title>
+<title>Ahmad Collection</title>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 
 <!-- ✅ Bootstrap CSS -->
@@ -22,8 +22,8 @@
 	<div class="wrapper">
 		<div class="main-header">
 			<div class="logo-header">
-				<a href="index.html" class="logo">
-					Ready Dashboard
+				<a href="#" class="logo">
+					Ahmad Collection
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -157,11 +157,31 @@
 					</div>
 					<ul class="nav">
 						<li class="nav-item active">
-							<a href="index.html">
+							<a href="{{url('frontend/dashboard')}}">
 								<i class="la la-dashboard"></i>
 								<p>Dashboard</p>
 							</a>
 						</li>
+						
+						<li class="nav-item active">
+							<a href="{{url('frontend/products')}}">
+								<i class="la la-shopping-cart"></i>
+								<p>product</p>
+							</a>
+						</li>
+						
+						<li class="nav-item active">
+							<a href="{{url('frontend/categories')}}">
+								<i class="la la-cubes"></i>
+								<p>categories</p>
+							</a>
+						</li>
+						<div class="position-absolute d-flex align-items-center" style="top: 570px; padding: 0 15px;">
+  <button class="d-flex align-items-center" style="color: red; border: none; padding: 10px 20px; background: none; font-size: 16px;">
+    <i class="la la-sign-out me-2"></i> Logout
+  </button>
+</div>
+
 					</ul>
 				</div>
 			</div>
