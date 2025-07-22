@@ -651,5 +651,29 @@
 
   </section>
 
+  <section>
+    <div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 p-5 mt-4 bg-white border rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-center justify-content-between">
+      
+      <!-- Left: Text -->
+      <div class="mb-4 mb-md-0">
+        <h4 class="fw-semibold mb-2">Subscribe to Our Newsletter</h4>
+        <p class="text-muted mb-0">Stay updated with the latest trends, offers, and exclusive content directly in your inbox.</p>
+      </div>
+
+      <!-- Right: Input + Button -->
+      <form action="#" method="POST" class="d-flex flex-column flex-sm-row align-items-stretch gap-2 w-100 w-md-auto ms-md-4">
+        @csrf
+        <input type="email" name="email" class="form-control rounded-pill px-4 py-2 border border-dark-subtle shadow-sm" placeholder="Your email address" required>
+        <button type="submit" class="btn btn-dark rounded-pill px-4 py-2">Subscribe</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+  </section>
+
 
   @endsection

@@ -5,12 +5,11 @@
 
           <!-- Brand Info -->
           <div class="col-md-4">
+            <a href="{{ route('home') }}">
             <img src="{{ asset('frontend/img/d8ff10cd-fa61-425f-9cd9-553548395382-removebg-preview.png')}}" alt="Logo"
-              style="height: 50px;">
+              style="height: 50px;"></a>
             <div class="d-flex gap-3 mt-2 mb-3">
               <a href="#" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="footer-icon"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="footer-icon"><i class="fab fa-twitter"></i></a>
               <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
@@ -20,9 +19,9 @@
             <h6 class="text-uppercase fw-semibold mb-3">Quick Links</h6>
             <ul class="list-unstyled">
               <li><a href="#" class="footer-link">Home</a></li>
-              <li><a href="#" class="footer-link">Collections</a></li>
-              <li><a href="#" class="footer-link">Brands</a></li>
-              <li><a href="#" class="footer-link">About Us</a></li>
+              <li><a href="#" class="footer-link">About</a></li>
+              <li><a href="#" class="footer-link">Blog</a></li>
+              <li><a href="#" class="footer-link">Today's Deals</a></li>
             </ul>
           </div>
 
@@ -41,7 +40,7 @@
 
         <!-- Bottom -->
         <div class="text-center small text-muted">
-          <p class="small text-muted">© 2023 . All Rights Reserved.</p>
+          <p class="small text-muted">© 2025 . All Rights Reserved.</p>
         </div>
       </div>
     </footer>

@@ -6,9 +6,12 @@ use App\Http\Controllers\Frontend\DashboardController;
 use App\Http\Controllers\Frontend\ProductController;
 use App\Http\Controllers\Frontend\categoriesController;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\BlogController;
 
-Route::get('frontend/index1', [HomeController::class, 'index']); // ✅ this matches your controller
 
+
+Route::get('frontend/index1', [HomeController::class, 'index'])->name('home'); // ✅ this matches your controller
+Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 
 
 Route::prefix('frontend')->group(function () {

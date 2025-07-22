@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <title>Ahmad Collection</title>
+<link rel="icon" href="{{ asset('frontend/img/d8ff10cd-fa61-425f-9cd9-553548395382.png') }}" type="image/x-icon">
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 
 <!-- ✅ Bootstrap CSS -->
