@@ -150,49 +150,36 @@
 			</div>
 			<div class="sidebar">
 				<div class="scrollbar-inner sidebar-wrapper">
-					<div class="user">
-						<div class="photo">
-							<img src="{{ asset('frontend/img/profile.jpg') }}" alt="User Profile">
-						</div>
-						<div class="info">
-							<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-								<span>
-									{{ Auth::user()->name }}
-																</span>
-							</a>
-							<div class="clearfix"></div>
 
-
-						</div>
-					</div>
 					<ul class="nav">
-						<li class="nav-item active">
-							<a href="{{url('frontend/dashboard')}}">
-								<i class="la la-dashboard"></i>
-								<p>Dashboard</p>
-							</a>
-						</li>
+                        <li class="nav-item {{ request()->is('frontend/dashboard') ? 'active' : '' }}">
+                            <a href="{{ url('frontend/dashboard') }}">
+                                <i class="la la-dashboard"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
 
-						<li class="nav-item active">
-							<a href="{{url('frontend/products')}}">
-								<i class="la la-shopping-cart"></i>
-								<p>Product</p>
-							</a>
-						</li>
+                        <li class="nav-item {{ request()->is('frontend/products') ? 'active' : '' }}">
+                            <a href="{{ url('frontend/products') }}">
+                                <i class="la la-shopping-cart"></i>
+                                <p>Product</p>
+                            </a>
+                        </li>
 
-						<li class="nav-item active">
-							<a href="{{url('frontend/categories')}}">
-								<i class="la la-cubes"></i>
-								<p>Categories</p>
-							</a>
-						</li>
-						<div class="position-absolute d-flex align-items-center" style="top: 570px; padding: 0 15px;">
+                        <li class="nav-item {{ request()->is('frontend/categories') ? 'active' : '' }}">
+                            <a href="{{ url('frontend/categories') }}">
+                                <i class="la la-cubes"></i>
+                                <p>Categories</p>
+                            </a>
+                        </li>
+
+                        <div class="position-absolute d-flex align-items-center" style="top: 570px; padding: 0 15px;">
                           <button class="d-flex align-items-center" style="color: red; border: none; padding: 10px 20px; background: none; font-size: 16px;">
-                            <i class="la la-sign-out me-2"></i>
+                            <i class="la la-sign-out mr-2"></i>
                               <form method="POST" action="{{ route('logout') }}">
                                   @csrf
 
-                                  <x-dropdown-link :href="route('logout')"
+                                  <x-dropdown-link style="padding-left: 0px !important;" class="text-danger p-0 px-0" :href="route('logout')"
                                                    onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                       {{ __('Log out') }}
