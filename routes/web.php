@@ -5,6 +5,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\DashboardController;
 use App\Http\Controllers\Frontend\ProductController;
 use App\Http\Controllers\Frontend\categoriesController;
+use App\Http\Controllers\Frontend\HomeController;
+
+Route::get('frontend/index1', [HomeController::class, 'index']); // ✅ this matches your controller
+
+
 
 Route::prefix('frontend')->group(function () {
     Route::resource('products', ProductController::class);
@@ -21,6 +26,7 @@ Route::get('/frontend/dashboard', [DashboardController::class, 'index']);
 Route::get('/', function () {
     return view('welcome');
 });
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

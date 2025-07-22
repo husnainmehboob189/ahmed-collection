@@ -1,0 +1,262 @@
+.banner_bg_main {
+    width: 100%;
+    height: 500px;
+   background-image: url('../frontend/img/ban.jpg');
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* copyright section start */
+
+.copyright_section {
+    width: 100%;
+    float: left;
+    background-color: #252525;
+    height: auto;
+}
+
+.copyright_text {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 0px;
+}
+
+.copyright_text a {
+    color: #ffffff;
+}
+
+.copyright_text a:hover {
+    color: #f26522;
+}
+
+.margin_top90 {
+    margin-top: 90px;
+}
+
+
+.product-title h6 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* copyright section end */
+
+
+@media (min-width: 992px) {
+    .col-lg-1-7 {
+        flex: 0 0 14.285%;
+        max-width: 14.285%;
+    }
+}
+
+
+
+/* Optional: Adjust height on smaller screens */
+
+@media (max-width:1024px) {
+    .banner_bg_main {
+        height: 370px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner_bg_main {
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner_bg_main {
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .banner_bg_main {
+        height: 150px !important;
+    }
+}
+
+
+
+
+/*  */
+.text {
+    border-bottom: 4px solid rgb(35, 35, 35);
+    padding-bottom: 15px;
+}
+
+.product-card {
+    position: relative;
+    border: none;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+.product-image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #b30000;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.hover-icon-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    transform: translate(20px, 20px);
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 10px 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover .hover-icon-link {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.hover-icon-link i {
+    color: #000;
+    font-size: 1rem;
+}
+
+.hover-icon-link:hover {
+    background: #f0f0f0;
+}
+
+.product-title {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 5px 15px 5px;
+}
+
+.product-rating i {
+    color: #ffc107;
+    font-size: 0.85rem;
+}
+
+.product-price {
+    font-size: 1rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 0.9rem;
+    margin-right: 8px;
+}
+
+.new-price {
+    color: #b30000;
+    font-weight: 600;
+}
+
+.review-count {
+    font-size: 0.875rem;
+    color: #555;
+    margin-left: 6px;
+}
+
+/* .card-body {
+            background-color: #fff;
+        } */
+
+@media (max-width: 991px) {
+    .col-lg-3 {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+   /* Add these new styles to your existing CSS */
+    .product-card {
+        /* Keep your existing styles */
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+    }
+
+    .product-card.animated {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Delay animations for staggered effect */
+    .product-card.animated:nth-child(1) { transition-delay: 0.1s; }
+    .product-card.animated:nth-child(2) { transition-delay: 0.2s; }
+    .product-card.animated:nth-child(3) { transition-delay: 0.3s; }
+    .product-card.animated:nth-child(4) { transition-delay: 0.4s; }
+
+
+
+
+    /* footer */
+    .footer-link {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: white;
+  transform: translateX(5px);
+}
+
+.footer-icon {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.footer-icon:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
