@@ -31,9 +31,9 @@
     }
   }
   </style>
- <div class="container py-5">
-  <div class="card shadow-sm" >
-    <div class="card-body responsive-padding mt-4">
+ <div class="py-5">
+  <div class="card shadow-sm mt-4" style="margin-left: 23%;width: 1000px">
+    <div class="card-body mt-4">
       <h2 class="text-center mb-4 mt-3">Add New Product</h2>
 
       <form>
@@ -60,7 +60,15 @@
           <label for="productTitle" class="form-label">Product description</label>
           <input type="text" class="form-control" id="productTitle" placeholder="">
         </div>
-         
+        {{--        Category --}}
+          <div class="mb-3">
+              <label for="productPrice" class="form-label">Category</label>
+              <select name="category" class="form-control">
+                  @foreach($categories as $category)
+                      <option value="{{ $category->name }}">{{ $category->name }}</option>
+                  @endforeach
+              </select>
+          </div>
         <!-- Price -->
         <div class="mb-3">
           <label for="productPrice" class="form-label">Price ($)</label>
