@@ -113,14 +113,14 @@
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="{{ asset('frontend/img/profile2.jpg') }}"  alt="user-img" width="36" class="img-circle"><span >Hizrian</span></span> </a>
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="{{ asset('frontend/img/profile2.jpg') }}"  alt="user-img" width="36" class="img-circle"><span >{{ Auth::user()->name }}</span></span> </a>
 							<ul class="dropdown-menu dropdown-user">
 								<li>
 									<div class="user-box">
-										<div class="u-img"><img src="assets/img/profile.jpg" alt="user"></div>
+										<div class="u-img"><img src="{{ asset('frontend/img/profile2.jpg') }}" alt="user"></div>
 										<div class="u-text">
-											<h4>Hizrian</h4>
-											<p class="text-muted">hello@themekita.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+											<h4>{{ Auth::user()->name }}</h4>
+											<p class="text-muted">{{ Auth::user()->email }}</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
 										</div>
 									</li>
 									<div class="dropdown-divider"></div>
@@ -157,7 +157,7 @@
 						<div class="info">
 							<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
 								<span>
-									Hizrian
+									{{ Auth::user()->name }}
 																</span>
 							</a>
 							<div class="clearfix"></div>

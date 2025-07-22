@@ -5,7 +5,7 @@
 
           <!-- Brand Info -->
           <div class="col-md-4">
-            <img src="images/d8ff10cd-fa61-425f-9cd9-553548395382-removebg-preview.png" alt="Logo"
+            <img src="{{ asset('frontend/img/d8ff10cd-fa61-425f-9cd9-553548395382-removebg-preview.png')}}" alt="Logo"
               style="height: 50px;">
             <div class="d-flex gap-3 mt-2 mb-3">
               <a href="#" class="footer-icon"><i class="fab fa-facebook-f"></i></a>

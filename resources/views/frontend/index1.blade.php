@@ -366,79 +366,6 @@
           </div>
         </div>
 
-        <!-- Product 2 -->
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card">
-
-            <!-- Image + icon wrapper -->
-            <div class="product-image-wrapper">
-              <span class="sale-badge">Sale 50%</span>
-
-              <!-- Eye icon on hover -->
-              <a href="detail.html" class="hover-icon-link" target="_blank" title="Quick View">
-                <i class="fas fa-eye"></i>
-              </a>
-
-              <!-- Product Image -->
-              <img src="{{ asset('frontend/img/img112.webp')}}" alt="Product 1" class="product-image">
-            </div>
-
-            <!-- Product Info -->
-            <div class="card-body px-0 pt-3">
-              <h6 class="product-title">2 Piece - Naqsh Suit - 42407056</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card">
-
-            <!-- Image + icon wrapper -->
-            <div class="product-image-wrapper">
-              <span class="sale-badge">Sale 50%</span>
-
-              <!-- Eye icon on hover -->
-              <a href="detail.html" class="hover-icon-link" target="_blank" title="Quick View">
-                <i class="fas fa-eye"></i>
-              </a>
-
-              <!-- Product Image -->
-              <img src="{{ asset('frontend/img/img114.webp')}}" alt="Product 1" class="product-image">
-            </div>
-
-            <!-- Product Info -->
-            <div class="card-body px-0 pt-3">
-              <h6 class="product-title">Cotton Suit - Slim Fit</h6>
-            </div>
-          </div>
-        </div>
-        <!-- Product 4 -->
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card">
-
-            <!-- Image + icon wrapper -->
-            <div class="product-image-wrapper">
-              <span class="sale-badge">Sale 50%</span>
-
-              <!-- Eye icon on hover -->
-              <a href="detail.html" class="hover-icon-link" target="_blank" title="Quick View">
-                <i class="fas fa-eye"></i>
-              </a>
-
-              <!-- Product Image -->
-              <img src="{{ asset('frontend/img/img115.webp')}}" alt="Product 1" class="product-image">
-            </div>
-
-            <!-- Product Info -->
-            <div class="card-body px-0 pt-3">
-              <h6 class="product-title">Graphite Grey Styling Suit SK-PSD24-014</h6>
-            </div>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -609,170 +536,11 @@
           </div>
         </div>
 
-        <!-- Product 3 -->
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card">
-
-            <!-- Image + icon wrapper -->
-            <div class="product-image-wrapper">
-              <span class="sale-badge">Sale 50%</span>
-
-              <!-- Eye icon on hover -->
-              <a href="images/img6.webp" class="hover-icon-link" target="_blank" title="Quick View">
-                <i class="fas fa-eye"></i>
-              </a>
-
-              <!-- Product Image -->
-              <img src="{{ asset('frontend/img/img6.webp')}}" alt="Product 1" class="product-image">
-            </div>
-
-            <!-- Product Info -->
-            <div class="card-body px-0 pt-3">
-              <h6 class="product-title">Mohagni - 3PC Lawn Embroidered Suit - BFU0073</h6>
-            </div>
-          </div>
-        </div>
-        <!-- Product 4 -->
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card">
-
-            <!-- Image + icon wrapper -->
-            <div class="product-image-wrapper">
-              <span class="sale-badge">Sale 50%</span>
-
-              <!-- Eye icon on hover -->
-              <a href="images/img7.webp" class="hover-icon-link" target="_blank" title="Quick View">
-                <i class="fas fa-eye"></i>
-              </a>
-
-              <!-- Product Image -->
-              <img src="{{ asset('frontend/img/img7.webp')}}" alt="Product 1" class="product-image">
-            </div>
-
-            <!-- Product Info -->
-            <div class="card-body px-0 pt-3">
-              <h6 class="product-title">Mohagni - 3PC Lawn Embroidered Suit - BFU0073</h6>
-            </div>
-          </div>
-        </div>
 
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="text-start my-5 px-3">
-        <h3 class="title scroll-trigger animate--slide-in" style="padding-bottom: 0px;">
-          <span class="text">Gents</span>
-        </h3>
-      </div>
-      <div class="row gy-4">
-
-        <!-- Product 1 -->
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card">
-
-            <!-- Image + icon wrapper -->
-            <div class="product-image-wrapper">
-              <span class="sale-badge">Sale 50%</span>
-
-              <!-- Eye icon on hover -->
-              <a href="detail.blade.php" class="hover-icon-link" target="_blank" title="Quick View">
-                <i class="fas fa-eye"></i>
-              </a>
-
-              <!-- Product Image -->
-              <img src="{{ asset('frontend/img/img111.webp')}}" alt="Product 1" class="product-image">
-            </div>
-
-            <!-- Product Info -->
-            <div class="card-body px-0 pt-3">
-              <h6 class="product-title">2 Piece - Naqsh Suit - 42508147</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 2 -->
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card">
-
-            <!-- Image + icon wrapper -->
-            <div class="product-image-wrapper">
-              <span class="sale-badge">Sale 50%</span>
-
-              <!-- Eye icon on hover -->
-              <a href="detail.html" class="hover-icon-link" target="_blank" title="Quick View">
-                <i class="fas fa-eye"></i>
-              </a>
-
-              <!-- Product Image -->
-              <img src="{{ asset('frontend/img/img112.webp')}}" alt="Product 1" class="product-image">
-            </div>
-
-            <!-- Product Info -->
-            <div class="card-body px-0 pt-3">
-              <h6 class="product-title">2 Piece - Naqsh Suit - 42407056</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card">
-
-            <!-- Image + icon wrapper -->
-            <div class="product-image-wrapper">
-              <span class="sale-badge">Sale 50%</span>
-
-              <!-- Eye icon on hover -->
-              <a href="detail.html" class="hover-icon-link" target="_blank" title="Quick View">
-                <i class="fas fa-eye"></i>
-              </a>
-
-              <!-- Product Image -->
-              <img src="{{ asset('frontend/img/img114.webp')}}" alt="Product 1" class="product-image">
-            </div>
-
-            <!-- Product Info -->
-            <div class="card-body px-0 pt-3">
-              <h6 class="product-title">Cotton Suit - Slim Fit</h6>
-            </div>
-          </div>
-        </div>
-        <!-- Product 4 -->
-
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card">
-
-            <!-- Image + icon wrapper -->
-            <div class="product-image-wrapper">
-              <span class="sale-badge">Sale 50%</span>
-
-              <!-- Eye icon on hover -->
-              <a href="detail.blade.php" class="hover-icon-link" target="_blank" title="Quick View">
-                <i class="fas fa-eye"></i>
-              </a>
-
-              <!-- Product Image -->
-              <img src="{{ asset('frontend/img/img115.webp')}}" alt="Product 1" class="product-image">
-            </div>
-
-            <!-- Product Info -->
-            <div class="card-body px-0 pt-3">
-              <h6 class="product-title">Graphite Grey Styling Suit SK-PSD24-014</h6>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
   <section>
     <!-- Include Bootstrap CSS and JS -->
@@ -790,7 +558,7 @@
           <button class="nav-link" id="kahani-tab" data-bs-toggle="tab" data-bs-target="#kahani" type="button"
             role="tab">Gents</button>
         </li>
-       
+
       </ul>
 
       <!-- Tab Content -->
@@ -872,56 +640,6 @@
             <!-- Product Info -->
             <div class="card-body px-0 pt-3">
               <h6 class="product-title">2 Piece - Naqsh Suit - 42508147</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 2 -->
-
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="card product-card">
-
-            <!-- Image + icon wrapper -->
-            <div class="product-image-wrapper">
-              <span class="sale-badge">Sale 50%</span>
-
-              <!-- Eye icon on hover -->
-              <a href="images/img112.webp" class="hover-icon-link" target="_blank" title="Quick View">
-                <i class="fas fa-eye"></i>
-              </a>
-
-              <!-- Product Image -->
-              <img src="{{ asset('frontend/img/img112.webp')}}" alt="Product 1" class="product-image">
-            </div>
-
-            <!-- Product Info -->
-            <div class="card-body px-0 pt-3">
-              <h6 class="product-title">2 Piece - Naqsh Suit - 42407056</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="card product-card">
-
-            <!-- Image + icon wrapper -->
-            <div class="product-image-wrapper">
-              <span class="sale-badge">Sale 50%</span>
-
-              <!-- Eye icon on hover -->
-              <a href="images/img114.webp" class="hover-icon-link" target="_blank" title="Quick View">
-                <i class="fas fa-eye"></i>
-              </a>
-
-              <!-- Product Image -->
-              <img src="{{ asset('frontend/img/img114.webp')}}" alt="Product 1" class="product-image">
-            </div>
-
-            <!-- Product Info -->
-            <div class="card-body px-0 pt-3">
-              <h6 class="product-title">Cotton Suit - Slim Fit</h6>
             </div>
           </div>
         </div>

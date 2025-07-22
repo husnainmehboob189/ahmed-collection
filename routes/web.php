@@ -24,7 +24,8 @@ Route::prefix('frontend')->group(function () {
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.index1');
+//    return view('welcome');
 });
 
 
