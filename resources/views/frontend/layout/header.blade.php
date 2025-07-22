@@ -32,7 +32,7 @@
 			</div>
 			<nav class="navbar navbar-header navbar-expand-lg">
 				<div class="container-fluid">
-					
+
 					<form class="navbar-left navbar-form nav-search mr-md-3" action="">
 						<div class="input-group">
 							<input type="text" placeholder="Search ..." class="form-control">
@@ -72,7 +72,7 @@
 												<span class="block">
 													New user registered
 												</span>
-												<span class="time">5 minutes ago</span> 
+												<span class="time">5 minutes ago</span>
 											</div>
 										</a>
 										<a href="#">
@@ -81,11 +81,11 @@
 												<span class="block">
 													Rahmad commented on Admin
 												</span>
-												<span class="time">12 minutes ago</span> 
+												<span class="time">12 minutes ago</span>
 											</div>
 										</a>
 										<a href="#">
-											<div class="notif-img"> 
+											<div class="notif-img">
 												<img src="{{ asset('frontend/img/profile2.jpg') }}" alt="Img Profile">
 
 											</div>
@@ -93,7 +93,7 @@
 												<span class="block">
 													Reza send messages to you
 												</span>
-												<span class="time">12 minutes ago</span> 
+												<span class="time">12 minutes ago</span>
 											</div>
 										</a>
 										<a href="#">
@@ -102,7 +102,7 @@
 												<span class="block">
 													Farrah liked Admin
 												</span>
-												<span class="time">17 minutes ago</span> 
+												<span class="time">17 minutes ago</span>
 											</div>
 										</a>
 									</div>
@@ -130,7 +130,17 @@
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#"><i class="ti-settings"></i> Account Setting</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#"><i class="fa fa-power-off"></i> Logout</a>
+									<a class="dropdown-item" href="#"><i class="fa fa-power-off"></i>
+                                        <form method="POST" action="{{ route('logout') }}">
+                                            @csrf
+
+                                            <x-dropdown-link :href="route('logout')"
+                                                             onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                                {{ __('Log Out') }}
+                                            </x-dropdown-link>
+                                        </form>
+                                    </a>
 								</ul>
 								<!-- /.dropdown-user -->
 							</li>
@@ -152,7 +162,7 @@
 							</a>
 							<div class="clearfix"></div>
 
-							
+
 						</div>
 					</div>
 					<ul class="nav">
@@ -162,25 +172,34 @@
 								<p>Dashboard</p>
 							</a>
 						</li>
-						
+
 						<li class="nav-item active">
 							<a href="{{url('frontend/products')}}">
 								<i class="la la-shopping-cart"></i>
-								<p>product</p>
+								<p>Product</p>
 							</a>
 						</li>
-						
+
 						<li class="nav-item active">
 							<a href="{{url('frontend/categories')}}">
 								<i class="la la-cubes"></i>
-								<p>categories</p>
+								<p>Categories</p>
 							</a>
 						</li>
 						<div class="position-absolute d-flex align-items-center" style="top: 570px; padding: 0 15px;">
-  <button class="d-flex align-items-center" style="color: red; border: none; padding: 10px 20px; background: none; font-size: 16px;">
-    <i class="la la-sign-out me-2"></i> Logout
-  </button>
-</div>
+                          <button class="d-flex align-items-center" style="color: red; border: none; padding: 10px 20px; background: none; font-size: 16px;">
+                            <i class="la la-sign-out me-2"></i>
+                              <form method="POST" action="{{ route('logout') }}">
+                                  @csrf
+
+                                  <x-dropdown-link :href="route('logout')"
+                                                   onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                      {{ __('Log out') }}
+                                  </x-dropdown-link>
+                              </form>
+                          </button>
+                        </div>
 
 					</ul>
 				</div>
