@@ -31,12 +31,13 @@
     }
   }
   </style>
- <div class="container py-5">
-  <div class="card shadow-sm" >
-    <div class="card-body responsive-padding mt-4">
+ <div class="py-5">
+  <div class="card shadow-sm mt-4" style="margin-left: 23%;width: 1000px">
+    <div class="card-body mt-4">
       <h2 class="text-center mb-4 mt-3">Add New Product</h2>
 
-      <form>
+      <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
+          @csrf
         <!-- Image Upload -->
         <div class="mb-4">
           <label for="productImage" class="form-label w-100">
@@ -46,31 +47,39 @@
               <small id="fileName" class="text-muted">No file selected</small>
             </div>
           </label>
-          <input type="file" class="form-control d-none" id="productImage" accept="image/*">
+          <input name="image" type="file" class="form-control d-none" id="productImage" accept="image/*">
         </div>
 
         <!-- Product Title -->
         <div class="mb-3">
           <label for="productTitle" class="form-label">Product Title</label>
-          <input type="text" class="form-control" id="productTitle" placeholder="e.g. Men's T-Shirt">
+          <input type="text" class="form-control" id="productTitle" placeholder="e.g. Men's T-Shirt" name="title">
         </div>
 
         <!-- Product description-->
         <div class="mb-3">
           <label for="productTitle" class="form-label">Product description</label>
-          <input type="text" class="form-control" id="productTitle" placeholder="">
+          <input type="text" class="form-control" id="productTitle" placeholder="" name="description">
         </div>
-         
+        {{--        Category --}}
+          <div class="mb-3">
+              <label for="productPrice" class="form-label">Category</label>
+              <select name="category" class="form-control">
+                  @foreach($categories as $category)
+                      <option value="{{ $category->name }}">{{ $category->name }}</option>
+                  @endforeach
+              </select>
+          </div>
         <!-- Price -->
         <div class="mb-3">
           <label for="productPrice" class="form-label">Price ($)</label>
-          <input type="number" class="form-control" id="productPrice" placeholder="e.g. 29.99">
+          <input type="number" class="form-control" id="productPrice" placeholder="e.g. 29.99" name="price">
         </div>
 
         <!-- Discount -->
         <div class="mb-4">
           <label for="productDiscount" class="form-label">Discount (%)</label>
-          <input type="number" class="form-control" id="productDiscount" placeholder="e.g. 10">
+          <input type="number" class="form-control" id="productDiscount" placeholder="e.g. 10" name="discount">
         </div>
 
         <!-- Submit Button -->

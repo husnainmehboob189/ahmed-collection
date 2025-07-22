@@ -45,17 +45,17 @@
 						</div>
 					</form>
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
-						<li class="nav-item dropdown hidden-caret">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="la la-envelope"></i>
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Something else here</a>
-							</div>
-						</li>
+{{--						<li class="nav-item dropdown hidden-caret">--}}
+{{--							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+{{--								<i class="la la-envelope"></i>--}}
+{{--							</a>--}}
+{{--							<div class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
+{{--								<a class="dropdown-item" href="#">Action</a>--}}
+{{--								<a class="dropdown-item" href="#">Another action</a>--}}
+{{--								<div class="dropdown-divider"></div>--}}
+{{--								<a class="dropdown-item" href="#">Something else here</a>--}}
+{{--							</div>--}}
+{{--						</li>--}}
 						<li class="nav-item dropdown hidden-caret">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="la la-bell"></i>
@@ -121,27 +121,22 @@
 										<div class="u-img"><img src="{{ asset('frontend/img/profile2.jpg') }}" alt="user"></div>
 										<div class="u-text">
 											<h4>{{ Auth::user()->name }}</h4>
-											<p class="text-muted">{{ Auth::user()->email }}</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+											<p class="text-muted">{{ Auth::user()->email }}</p><a href="{{route('profile.edit')}}" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
 										</div>
 									</li>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#"><i class="ti-user"></i> My Profile</a>
-									<a class="dropdown-item" href="#"></i> My Balance</a>
-									<a class="dropdown-item" href="#"><i class="ti-email"></i> Inbox</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#"><i class="ti-settings"></i> Account Setting</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#"><i class="fa fa-power-off"></i>
-                                        <form method="POST" action="{{ route('logout') }}">
-                                            @csrf
+                                <button class="d-flex align-items-center" style="color: red; border: none; padding: 10px 20px; background: none; font-size: 16px;">
+                                    <i class="la la-sign-out mr-2"></i>
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
 
-                                            <x-dropdown-link :href="route('logout')"
-                                                             onclick="event.preventDefault();
+                                        <x-dropdown-link style="padding-left: 0px !important;" class="text-danger p-0 px-0" :href="route('logout')"
+                                                         onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                                {{ __('Log Out') }}
-                                            </x-dropdown-link>
-                                        </form>
-                                    </a>
+                                            {{ __('Log out') }}
+                                        </x-dropdown-link>
+                                    </form>
+                                </button>
 								</ul>
 								<!-- /.dropdown-user -->
 							</li>
@@ -151,49 +146,30 @@
 			</div>
 			<div class="sidebar">
 				<div class="scrollbar-inner sidebar-wrapper">
-					<div class="user">
-						<div class="photo">
-							<img src="{{ asset('frontend/img/profile.jpg') }}" alt="User Profile">
-						</div>
-						<div class="info">
-							<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-								<span>
-									{{ Auth::user()->name }}
-																</span>
-							</a>
-							<div class="clearfix"></div>
 
-
-						</div>
-					</div>
 					<ul class="nav">
-						<li class="nav-item active">
-							<a href="{{url('frontend/dashboard')}}">
-								<i class="la la-dashboard"></i>
-								<p>Dashboard</p>
-							</a>
-						</li>
+                        <li class="nav-item {{ request()->is('frontend/dashboard') ? 'active' : '' }}">
+                            <a href="{{ url('frontend/dashboard') }}">
+                                <i class="la la-dashboard"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
 
-						<li class="nav-item active">
-							<a href="{{url('frontend/products')}}">
-								<i class="la la-shopping-cart"></i>
-								<p>Product</p>
-							</a>
-						</li>
+                        <li class="nav-item {{ request()->is('frontend/products') ? 'active' : '' }}">
+                            <a href="{{ url('frontend/products') }}">
+                                <i class="la la-shopping-cart"></i>
+                                <p>Product</p>
+                            </a>
+                        </li>
 
-						<li class="nav-item active">
-							<a href="{{url('frontend/categories')}}">
-								<i class="la la-cubes"></i>
-								<p>Categories</p>
-							</a>
-						</li>
-						<div class="position-absolute d-flex align-items-center" style="top: 570px; padding: 0 15px;">
+
+                        <div class="position-absolute d-flex align-items-center" style="top: 570px; padding: 0 15px;">
                           <button class="d-flex align-items-center" style="color: red; border: none; padding: 10px 20px; background: none; font-size: 16px;">
-                            <i class="la la-sign-out me-2"></i>
+                            <i class="la la-sign-out mr-2"></i>
                               <form method="POST" action="{{ route('logout') }}">
                                   @csrf
 
-                                  <x-dropdown-link :href="route('logout')"
+                                  <x-dropdown-link style="padding-left: 0px !important;" class="text-danger p-0 px-0" :href="route('logout')"
                                                    onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                       {{ __('Log out') }}
