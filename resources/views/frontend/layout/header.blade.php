@@ -18,6 +18,9 @@
 <!-- ✅ Demo CSS -->
 <link rel="stylesheet" href="{{ asset('frontend/css/demo.css') }}">
 
+
+
+
 </head>
 <body>
 	<div class="wrapper">
@@ -155,12 +158,49 @@
                             </a>
                         </li>
 
-                        <li class="nav-item {{ request()->is('frontend/products') ? 'active' : '' }}">
-                            <a href="{{ url('frontend/products') }}">
-                                <i class="la la-shopping-cart"></i>
-                                <p>Product</p>
-                            </a>
-                        </li>
+                        <li class="nav-item">
+    <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#productDropdown" role="button" aria-expanded="false" aria-controls="productDropdown">
+        <span><i class="la la-shopping-cart me-2 "></i> Product</span>
+        <i class="la la-angle-down" style="font-size: 18px;"></i>
+    </a>
+
+    <div class="collapse ps-3 {{ request()->is('frontend/products*') ? 'show' : '' }}" id="productDropdown">
+        <ul class="nav flex-column">
+			   <li class="nav-item">
+                <a class="nav-link {{ request()->is('frontend/products') ? 'active' : '' }}" href="{{ url('frontend/products') }}">
+                				Create Product 
+                </a>
+            </li>
+			 <li class="nav-item">
+                <a class="nav-link {{ request()->routeIs('products.listing') ? 'active' : '' }}" href="{{ route('products.listing') }}">
+                  Product Listing
+               </a>
+            </li>
+        </ul>
+    </div>
+</li>
+
+                         
+
+						<li class="nav-item">
+    <a data-bs-toggle="collapse" href="#blogDropdown" role="button" aria-expanded="false" aria-controls="blogDropdown">
+        <i class="la la-shopping-cart"></i>
+        <p>Blogs</p>
+        <i class="la la-angle-down" style="font-size: 18px;margin-left: 86px;"></i>
+    </a>
+    <div class="collapse" id="blogDropdown">
+        <ul class="nav flex-column ms-3">
+			 <li class="nav-item">
+                <a class="nav-link" href="{{ route('posts.create') }}">Create Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('posts.index') }}">Blogs listing</a>
+            </li>
+        </ul>
+    </div>
+</li>
+
+				
 
 
                         <div class="position-absolute d-flex align-items-center" style="top: 570px; padding: 0 15px;">
@@ -181,3 +221,5 @@
 					</ul>
 				</div>
 			</div>
+<!-- ✅ Bootstrap JS (v5) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -101,31 +101,23 @@
   const uploadBox = document.getElementById('uploadBox');
   const fileName = document.getElementById('fileName');
 
-  uploadBox.addEventListener('click', () => fileInput.click());
+  
 
-  fileInput.addEventListener('change', () => {
-    if (fileInput.files.length > 0) {
-      fileName.textContent = fileInput.files[0].name;
-    } else {
-      fileName.textContent = "No file selected";
-    }
-  });
+  // uploadBox.addEventListener('dragover', (e) => {
+  //   e.preventDefault();
+  //   uploadBox.style.backgroundColor = '#e9ecef';
+  // });
 
-  uploadBox.addEventListener('dragover', (e) => {
-    e.preventDefault();
-    uploadBox.style.backgroundColor = '#e9ecef';
-  });
+  // uploadBox.addEventListener('dragleave', () => {
+  //   uploadBox.style.backgroundColor = '';
+  // });
 
-  uploadBox.addEventListener('dragleave', () => {
-    uploadBox.style.backgroundColor = '';
-  });
-
-  uploadBox.addEventListener('drop', (e) => {
-    e.preventDefault();
-    fileInput.files = e.dataTransfer.files;
-    fileName.textContent = fileInput.files[0].name;
-    uploadBox.style.backgroundColor = '';
-  });
+  // uploadBox.addEventListener('drop', (e) => {
+  //   e.preventDefault();
+  //   fileInput.files = e.dataTransfer.files;
+  //   fileName.textContent = fileInput.files[0].name;
+  //   uploadBox.style.backgroundColor = '';
+  // });
 </script>
 
 @endsection
