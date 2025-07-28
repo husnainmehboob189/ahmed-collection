@@ -34,7 +34,7 @@ class ProductController extends Controller
         'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
     ]);
 
-    dd($request->all());
+    // dd($request->all());
 
     $product = DB::table('products')->where('id', $id)->first();
 

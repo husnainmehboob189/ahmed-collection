@@ -20,8 +20,8 @@
 
 </style>
 
-<div class="py-5">
-  <div class="card shadow-sm mt-4" style="margin-left: 23%; width: 1000px;">
+<div class="py-5 align-content-center" style="max-height: 92vh; height:100%; overflow-y: auto;">
+  <div class="card shadow-sm mt-4" style="margin-left: 30%; width: 1000px;">
     <div class="card-body mt-4">
       <h2 class="text-center mb-4 mt-3">Create New Blog</h2>
 

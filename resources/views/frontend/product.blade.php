@@ -18,7 +18,24 @@
       font-size: 48px;
       color: #6c757d;
     }
+  .upload-box {
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    padding: 1.5rem;
+    transition: background-color 0.3s ease;
+    min-height: 200px;
+  }
 
+  .upload-box:hover {
+    background-color: #e9ecef;
+  }
+
+  .upload-box img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+  }
   @media (min-width: 1024px) {
     .responsive-padding {
       padding-left:200px !important;
@@ -32,8 +49,8 @@
   }
   </style>
  <div class="py-5">
-  <div class="card shadow-sm mt-4" style="margin-left: 23%;width: 1000px">
-    <div class="card-body mt-4">
+  <div class="card shadow-sm mt-4 update-product-container mx-auto ml-0" style="width: 800px;margin-right:430px !important;">
+    <div class="card-body mt-4" style="">
       <h2 class="text-center mb-4 mt-3">Add New Product</h2>
 
       <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
@@ -41,12 +58,16 @@
         <!-- Image Upload -->
         <div class="mb-4">
           <label for="productImage" class="form-label w-100">
-            <div class="upload-box" id="uploadBox">
-              <i class="bi bi-upload"></i>
-              <p class="mt-2 mb-0">Click to upload or drag and drop</p>
-              <small id="fileName" class="text-muted">No file selected</small>
+            <div class="upload-box text-center p-3 border rounded position-relative" id="uploadBox">
+              <i class="bi bi-upload fs-1" id="uploadIcon"></i>
+              <p class="mt-2 mb-0" id="uploadText">Click to upload or drag and drop</p>
+              <small id="fileName" class="text-muted d-block">No file selected</small>
+
+              <!-- Image Preview inside upload box -->
+              <img id="previewImage" src="#" alt="Preview" class="img-fluid mt-2 d-none" style="max-height: 150px;">
             </div>
           </label>
+
           <input name="image" type="file" class="form-control d-none" id="productImage" accept="image/*">
         </div>
 
@@ -97,27 +118,26 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 <script>
-  const fileInput = document.getElementById('productImage');
-  const uploadBox = document.getElementById('uploadBox');
-  const fileName = document.getElementById('fileName');
+document.getElementById('productImage').addEventListener('change', function (event) {
+  const file = event.target.files[0];
 
-  
+  if (file) {
+    document.getElementById('fileName').textContent = file.name;
 
-  // uploadBox.addEventListener('dragover', (e) => {
-  //   e.preventDefault();
-  //   uploadBox.style.backgroundColor = '#e9ecef';
-  // });
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      const previewImage = document.getElementById('previewImage');
+      previewImage.src = e.target.result;
+      previewImage.classList.remove('d-none');
 
-  // uploadBox.addEventListener('dragleave', () => {
-  //   uploadBox.style.backgroundColor = '';
-  // });
-
-  // uploadBox.addEventListener('drop', (e) => {
-  //   e.preventDefault();
-  //   fileInput.files = e.dataTransfer.files;
-  //   fileName.textContent = fileInput.files[0].name;
-  //   uploadBox.style.backgroundColor = '';
-  // });
+      // Optionally hide icon and text
+      document.getElementById('uploadIcon').style.display = 'none';
+      document.getElementById('uploadText').style.display = 'none';
+    };
+    reader.readAsDataURL(file);
+  }
+});
 </script>
+
 
 @endsection

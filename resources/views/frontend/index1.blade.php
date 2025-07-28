@@ -653,8 +653,8 @@
 
   <section>
     <div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-lg-10 p-5 mt-4 bg-white border rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-center justify-content-between">
+  <div class="container mx-auto p-0">
+    <div class="col p-5 mt-4 bg-white border rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-center justify-content-between">
       
       <!-- Left: Text -->
       <div class="mb-4 mb-md-0">

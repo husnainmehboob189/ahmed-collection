@@ -1,4 +1,5 @@
-	<footer class="footer">
+	<footer class="footer" style="max-width: 1580px;
+    margin:0px 35px 0px  auto;">
 					<div class="container-fluid">
 						<nav class="pull-left">
 							<ul class="nav">
@@ -20,7 +21,7 @@
 							</ul>
 						</nav>
 						<div class="copyright ml-auto">
-							2018, made with <i class="la la-heart heart text-danger"></i> by <a href="http://www.themekita.com">ThemeKita</a>
+							2025, made with <i class="la la-heart heart text-danger"></i> by <a href="https://techtrack.online/">TechTrack</a>
 						</div>				
 					</div>
 				</footer>
